@@ -1,6 +1,9 @@
 from flask import Flask, render_template
 
 app = Flask(__name__)
+@app.route("/api")
+def api():
+    return "x=5 , y=7"
 
 @app.route("/")
 def index():
